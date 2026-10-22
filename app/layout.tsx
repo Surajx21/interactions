@@ -1,8 +1,8 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import ReactLenis from "lenis/react";
 import { Analytics } from "@vercel/analytics/next";
 import { Metadata } from "next";
+import { SmoothScroll } from "@/components/smooth-scroll";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -47,8 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={`${bricolage.className} antialiased`}>{children}</body>
-      <ReactLenis root />
+      <body className={`${bricolage.className} antialiased`}>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
       <Analytics />
     </html>
   );
