@@ -45,6 +45,11 @@ const pageLinks: DemoLink[] = [
     href: "/pages/svg-parallax-scroll",
     sourcePath: `${GITHUB_TREE}/pages/svg-parallax-scroll`,
   },
+  {
+    title: "Orbital Gallery",
+    href: "/pages/orbital-gallery",
+    sourcePath: `${GITHUB_TREE}/pages/orbital-gallery`,
+  },
 ];
 
 function DemoRow({ title, href, sourcePath }: DemoLink) {
